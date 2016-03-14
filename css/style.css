@@ -48,8 +48,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	display: block;
 }
 body {
-	font: 12px/18px Arial, sans-serif;
+	font-size: 14px;
+	font-family: proximanova-regular;
 	width: 100%;
+}
+@font-face {
+    font-family: 'proximanova-regular';
+    src: url('../fonts/proxima_nova/regular/proxima_nova_regular.eot');
+    src: url('../fonts/proxima_nova/regular/proxima_nova_regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova/regular/proxima_nova_regular.woff2') format('woff2'),
+         url('../fonts/proxima_nova/regular/proxima_nova_regular.woff') format('woff'),
+         url('../fonts/proxima_nova/regular/proxima_nova_regular.ttf') format('truetype'),
+         url('../fonts/proxima_nova/regular/proxima_nova_regular.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_nova_cn_ltlight';
+    src: url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.eot');
+    src: url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.woff2') format('woff2'),
+         url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.woff') format('woff'),
+         url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.ttf') format('truetype'),
+         url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.svg#proxima_nova_cn_ltlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_nova_cn_regular';
+    src: url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.eot');
+    src: url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.woff2') format('woff2'),
+         url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.woff') format('woff'),
+         url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.ttf') format('truetype'),
+         url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.svg#proxima_nova_cn_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 .wrapper {
 	max-width: 1200px;
@@ -71,17 +108,154 @@ body {
 /*start component top menu*/
 .top-menu-wrapper {
     padding-top: 40px;
+    background-color: #0e0e37;
 }
 .top-menu-wrapper ul li {
     display: inline-block;
+    margin-right: 45px;
+}
+.top.menu.wrapper ul li a {
+    color: #b7c9e4;
+    font-family: proximanova-regular;
+    font-size: 16px;
+}
+.top.menu.wrapper ul li a:hover,  .top.menu.wrapper ul li a.selected{
+	color: #fff;
+	text-decoration: none;
 }
 .top.menu.wrapper {
     text-align: center;
 }
 .top-menu-wrapper ul li:last-child {
     float: right;
+    margin: 0px;
+    padding: 0px;
 }
 /*end component top menu*/
+
+/*start component about main page*/
+.main-page-about-wrapper {
+    min-height: 1039px;
+     background:
+    url(../images/about-bg.jpg) no-repeat center top,
+    #070821 url(../images/about-bg-line.png) repeat-x left top;
+    padding-bottom: 105px;
+
+}
+.main-page-about-wrapper .top-block-text {
+    text-align: center;
+     clear: both;
+}
+.main-page-about-wrapper .top-block-text h1 {
+ 	color: #fff;
+    font-family: proxima_nova_cn_ltlight;
+    font-size: 2.4em;
+    letter-spacing: 12px;
+    line-height: 1.7em;
+    padding-bottom: 22px;
+    padding-top: 137px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main-page-about-wrapper .top-block-text h2{
+	color: #fff;
+}
+.main-page-about-wrapper .top-block-text h2 {
+    color: #fff;
+    padding-bottom: 76px;
+    font-size: 1.3em;
+}
+.add-service{
+	background-color: #cf051d;
+	border-bottom: 3px solid #a60417;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-radius: 4px;
+    width: 288px;
+    color: #fff;
+    font-size: 0.83em;
+    letter-spacing: 2px;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.about-list-wrapper{
+	text-align: center;
+}
+.about-list-wrapper h2 span {
+    color: #fff;
+    font-family: cond_regular;
+}
+.about-list-wrapper h2 {
+    font-size: 2em;
+    padding-top: 147px;
+    text-align: center;
+    padding-bottom: 47px;
+}
+.about-list-wrapper .about-cell {
+    display: inline-block;
+    width: 21%;
+}
+.about-list-wrapper .about-cell h3 {
+    color: #f00e29;
+    font-size: 1.5em;
+    padding-top: 32px;
+}
+.about-list-wrapper .about-cell .about-text {
+    color: #fff;
+    text-align: left;
+}
+/*end component about main page*/
+
+/*start about team*/
+.about-team-wrapper {
+    background: #1f0a0d url("../images/about-team-bg.jpg") no-repeat scroll center top / cover ;
+    height: 600px;
+    text-align: center;
+}
+.about-team-wrapper h2 {
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 4px;
+    padding-bottom: 36px;
+    padding-top: 223px;
+}
+
+.about-team-wrapper .about-team-text {
+    color: #fff;
+    font-size: 1.3em;
+}
+/*end about team*/
+
+/*start component portfolio main*/
+.portfolio-main-wrapper{
+	min-height: 800px;
+}
+/*end compopnent portfolio main*/
+
+/*start bottom main include area*/
+.bottom-main-wrapper{
+	min-height: 464px;
+	text-align: center;
+	background-image: url('../images/bottom-bg-main.jpg');
+     background:
+    url('../images/bottom-bg-main.jpg') no-repeat center top,
+    #171641 url('../images/bottom-bg-main-line.png') repeat-x left top;
+}
+.bottom-main-wrapper h2 {
+    color: #fff;
+    font-size: 1.8em;
+    padding-bottom: 53px;
+    padding-top: 98px;
+}
+.bottom-main-wrapper .bottom-main-text{
+	color: #fff;
+	padding-bottom: 50px;
+	font-size: 1.4em;
+}
+/*end bottom main inlcude area*/
 .content {
 }
 
@@ -91,6 +265,6 @@ body {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-	height: 100px;
-	background: #BFF08E;
+	min-height: 136px;
+	background: #07050e;
 }
