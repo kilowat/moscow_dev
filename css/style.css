@@ -302,7 +302,61 @@ body {
 .content {
     padding-top: 63px;
 }
-
+/*start component portfolio*/
+.protfolio-head {
+    font-family: ProximaNovaCond-Regular;
+    font-size: 1.6em;
+    letter-spacing: 11px;
+    margin-bottom: 102px;
+    padding-left: 112px;
+    padding-top: 101px;
+    text-transform: uppercase;
+}
+.protfolio-head span:first-child{
+  color: #cf051d;
+}
+.protfolio-head span:last-child{
+  color: #000;
+  letter-spacing: 10px;
+}
+.portfolio-list:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.portfolio-left-block {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+.portfolio-content {
+    padding-left: 109px;
+    width: 60%;
+}
+.portfolio-name {
+    color: #cf051d;
+    font-size: 1.7em;
+    line-height: 1.2em;
+    font-family: ProximaNova-Semibold;
+    padding-bottom: 29px;
+}
+.portfolio-text {
+    font-size: 1.3em;
+    line-height: 1.6em;
+    margin-bottom: 40px;
+}
+.show-portfolio {
+    border-bottom: 1px dashed;
+    color: #cf051d;
+    display: inline-block;
+    cursor: pointer;
+}
+.p-slider-pagin {
+    left: 5px;
+    position: absolute;
+    top: 111px;
+}
+/*end component portfolio*/
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
