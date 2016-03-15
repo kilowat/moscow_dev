@@ -196,3 +196,18 @@
 .slick-next:hover {
     background-position: 0 100%;
 }
+.slick-dots {
+    bottom: 0;
+    display: block;
+    left: 50px;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: auto;
+}
+.slick-dots li {
+    display:block;
+}

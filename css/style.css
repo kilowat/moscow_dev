@@ -157,7 +157,7 @@ body {
 
 /*start component about main page*/
 .main-page-about-wrapper {
-    min-height: 1016px;
+    min-height: 1032px;
      background:
     url(../images/about-bg.jpg) no-repeat center top,
     #070821 url(../images/about-bg-line.png) repeat-x left top;
@@ -175,7 +175,7 @@ body {
     letter-spacing: 12px;
     line-height: 1.7em;
     padding-bottom: 18px;
-    padding-top: 136px;
+    padding-top: 141px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -229,7 +229,7 @@ body {
     color: #f00e29;
     font-family: ProximaNova-Semibold;
     font-size: 1.7em;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-top: 35px;
 }
 .about-list-wrapper .about-cell .about-text {
@@ -243,7 +243,7 @@ body {
 /*start about team*/
 .about-team-wrapper {
     background: #1f0a0d url("../images/about-team-bg.jpg") no-repeat scroll center top / cover ;
-    min-height: 592px;
+    min-height: 600px;
     text-align: center;
 }
 .about-team-wrapper h2 {
@@ -272,7 +272,7 @@ body {
 
 /*start component portfolio main*/
 .portfolio-main-wrapper{
-  min-height: 789px;
+  min-height: 300px;
 }
 /*end compopnent portfolio main*/
 
@@ -308,7 +308,8 @@ body {
     font-family: ProximaNovaCond-Regular;
     font-size: 1.6em;
     letter-spacing: 11px;
-    padding-left: 112px;
+    margin-top: 102px;
+    padding-left: 96px;
     position: absolute;
     text-transform: uppercase;
 }
@@ -329,15 +330,10 @@ body {
     width: 50%;
     position: relative;
 }
-.portfolio-right-block {
-    float: right;
-    position: absolute;
-    right: 0;
-    width: 50%;
-}
 .portfolio-content {
-    padding-left: 109px;
+    padding-left: 95px;
     width: 60%;
+    position: relative;
 }
 .portfolio-name {
     color: #cf051d;
@@ -345,7 +341,7 @@ body {
     line-height: 1.2em;
     font-family: ProximaNova-Semibold;
     padding-bottom: 29px;
-    margin-top: 20px;
+    margin-top: 226px;
 }
 .portfolio-text {
     font-size: 1.3em;
@@ -353,10 +349,27 @@ body {
     margin-bottom: 40px;
 }
 .portfolio-item {
-    clear: both;
+    
 }
 .portfolio-list{
+    position: relative;
+}
+.portfolio-list .pagin {
+    left: 0px;
+    position: absolute;
+    top: 342px;
+}
+.portfolio-right-block {
+    float: right;
+    width: 50%;
+    right: 0;
+ 
+}
 
+.portfolio-item::after {
+    clear: both;
+    content: "";
+    display: block;
 }
 .show-portfolio {
     border-bottom: 1px dashed;
@@ -370,8 +383,15 @@ body {
     top: 111px;
 }
 .fotorama__nav-wrap {
-    bottom: 10px;
+    bottom: 35px;
     position: absolute;
+}
+.fotorama__thumb-border { 
+    left: -5px!important;
+    padding: 5px;
+    top: -5px!important;
+    border-color: #cf051d!important;
+    
 }
 /*end component portfolio*/
 /* Footer
