@@ -352,6 +352,12 @@ body {
     line-height: 1.6em;
     margin-bottom: 40px;
 }
+.portfolio-item {
+    clear: both;
+}
+.portfolio-list{
+
+}
 .show-portfolio {
     border-bottom: 1px dashed;
     color: #cf051d;
