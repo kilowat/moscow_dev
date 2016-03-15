@@ -7,7 +7,9 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <script src="./js/jquery-2.2.1.min.js" type="text/javascript"></script>
+  <script src="./js/fotorama.js" type="text/javascript"></script>
   <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/fotorama.css" rel="stylesheet">
   <script src="./js/pixp.js" type="text/javascript"></script>
   <script src="./js/jquery.placeholder.min.js" type="text/javascript"></script>
 </head>
@@ -122,9 +124,9 @@
     <div class="wrapper">
         <div class="portfolio-component">
           <div class="protfolio-head"><span>наши</span> <span>проекты</span></div>
-          <div class="portfolio-list">
-            <!--foreach arResult-->
+          <div class="portfolio-item">
             <div class="portfolio-left-block">
+
               <div class="portfolio-content">
                 <h3 class="portfolio-name">Комплекс апартаментов сподземной автостоянкой</h3>
                 <div class="portfolio-text">
@@ -143,20 +145,18 @@
               </div>
             </div>
             <div class="portfolio-right-block">
-              <ul class="portfolio-photo-list">
-                <li>
-                  <span>1</span>
-                </li>
-                <li>
-                  <span>2</span>
-                </li>
-                <li>
-                  <span>3</span>
-                </li>
-              </ul>
+              <div class="fotorama" 
+                data-max-width="100%"  
+                data-max-height="100%"
+                data-nav="thumbs"
+                data-fit="cover"
+                data-thumbmargin="12">
+                <img src="./images/photo-portfolio.jpg">
+                <img src="./images/pf-1.jpg">
+              </div>
             </div>
-            <!--endforeach-->
           </div>
+
         </div>
     </div>
   </div>

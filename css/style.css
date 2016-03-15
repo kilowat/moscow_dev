@@ -116,6 +116,7 @@ body {
     width: 100%;
     text-align: center;
     min-height: 63px;
+    z-index: 2;
 }
 
 .top-menu-wrapper nav {
@@ -271,7 +272,7 @@ body {
 
 /*start component portfolio main*/
 .portfolio-main-wrapper{
-  min-height: 790px;
+  min-height: 789px;
 }
 /*end compopnent portfolio main*/
 
@@ -307,9 +308,8 @@ body {
     font-family: ProximaNovaCond-Regular;
     font-size: 1.6em;
     letter-spacing: 11px;
-    margin-bottom: 102px;
     padding-left: 112px;
-    padding-top: 101px;
+    position: absolute;
     text-transform: uppercase;
 }
 .protfolio-head span:first-child{
@@ -329,6 +329,12 @@ body {
     width: 50%;
     position: relative;
 }
+.portfolio-right-block {
+    float: right;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
 .portfolio-content {
     padding-left: 109px;
     width: 60%;
@@ -339,6 +345,7 @@ body {
     line-height: 1.2em;
     font-family: ProximaNova-Semibold;
     padding-bottom: 29px;
+    margin-top: 20px;
 }
 .portfolio-text {
     font-size: 1.3em;
@@ -355,6 +362,10 @@ body {
     left: 5px;
     position: absolute;
     top: 111px;
+}
+.fotorama__nav-wrap {
+    bottom: 10px;
+    position: absolute;
 }
 /*end component portfolio*/
 /* Footer
