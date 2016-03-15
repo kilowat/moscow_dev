@@ -12,85 +12,89 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* End of Eric Meyer's CSS Reset */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-	display: block;
+  display: block;
 }
 body {
-	font-size: 14px;
-	font-family: proximanova-regular;
-	width: 100%;
+  font-size: 14px;
+  font-family: ProximaNova-Regular;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/proxima_nova/regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/proxima_nova/regular/ProximaNova-Regular.otf')  format('opentype'),
+       url('../fonts/proxima_nova/regular/ProximaNova-Regular.woff') format('woff'), url('../fonts/proxima_nova/regular/ProximaNova-Regular.ttf')  format('truetype'), url('../fonts/proxima_nova/regular/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaCond-Light';
+  src: url('../fonts/proxima_nova_condensed/regular/ProximaNovaCond-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/proxima_nova_condensed/light/ProximaNovaCond-Light.otf')  format('opentype'),
+       url('../fonts/proxima_nova_condensed/regular/ProximaNovaCond-Light.woff') format('woff'), url('../fonts/proxima_nova_condensed/light/ProximaNovaCond-Light.ttf')  format('truetype'), url('../fonts/proxima_nova_condensed/light/ProximaNovaCond-Light.svg#ProximaNovaCond-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'proximanova-regular';
-    src: url('../fonts/proxima_nova/regular/proxima_nova_regular.eot');
-    src: url('../fonts/proxima_nova/regular/proxima_nova_regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proxima_nova/regular/proxima_nova_regular.woff2') format('woff2'),
-         url('../fonts/proxima_nova/regular/proxima_nova_regular.woff') format('woff'),
-         url('../fonts/proxima_nova/regular/proxima_nova_regular.ttf') format('truetype'),
-         url('../fonts/proxima_nova/regular/proxima_nova_regular.svg#proxima_nova_rgregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'ProximaNovaCond-Regular';
+  src: url('../fonts/proxima_nova_condensed/regular/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/proxima_nova_condensed/regular/ProximaNovaCond-Regular.otf')  format('opentype'),
+       url('../fonts/proxima_nova_condensed/regular/ProximaNovaCond-Regular.woff') format('woff'), url('../fonts/proxima_nova_condensed/regular/ProximaNovaCond-Regular.ttf')  format('truetype'), url('../fonts/proxima_nova_condensed/regular/ProximaNovaCond-Regular.svg#ProximaNovaCond-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'proxima_nova_cn_ltlight';
-    src: url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.eot');
-    src: url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.woff2') format('woff2'),
-         url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.woff') format('woff'),
-         url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.ttf') format('truetype'),
-         url('../fonts/proxima_nova/cond_light/proxima_nova_condensed_light.svg#proxima_nova_cn_ltlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'ProximaNova-Semibold';
+  src: url('../fonts/proxima_nova/semibold/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),  url('../fonts/proxima_nova/semibold/ProximaNova-Semibold.otf')  format('opentype'),
+       url('../fonts/proxima_nova/semibold/ProximaNova-Semibold.woff') format('woff'), url('../fonts/proxima_nova/semibold/ProximaNova-Semibold.ttf')  format('truetype'), url('../fonts/proxima_nova/semibold/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-    font-family: 'proxima_nova_cn_regular';
-    src: url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.eot');
-    src: url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.woff2') format('woff2'),
-         url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.woff') format('woff'),
-         url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.ttf') format('truetype'),
-         url('../fonts/proxima_nova/cond_regular/proxima_nova_condensed_regular.svg#proxima_nova_cn_rgregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/proxima_nova/bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/proxima_nova/bold/ProximaNova-Bold.otf')  format('opentype'),
+       url('../fonts/proxima_nova/bold/ProximaNova-Bold.woff') format('woff'), url('../fonts/proxima_nova/bold/ProximaNova-Bold.ttf')  format('truetype'), url('../fonts/proxima_nova/bold/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
+
 .wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -107,35 +111,52 @@ body {
 
 /*start component top menu*/
 .top-menu-wrapper {
-    padding-top: 40px;
     background-color: #0e0e37;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    min-height: 63px;
+}
+
+.top-menu-wrapper nav {
+    margin-top: 40px;
 }
 .top-menu-wrapper ul li {
     display: inline-block;
     margin-right: 45px;
 }
-.top.menu.wrapper ul li a {
+.top-menu-wrapper ul li a {
     color: #b7c9e4;
     font-family: proximanova-regular;
     font-size: 16px;
 }
-.top.menu.wrapper ul li a:hover,  .top.menu.wrapper ul li a.selected{
-	color: #fff;
-	text-decoration: none;
-}
-.top.menu.wrapper {
-    text-align: center;
+.top-menu-wrapper ul li a:hover,  .top-menu-wrapper ul li a.selected{
+  color: #fff;
+  text-decoration: none;
 }
 .top-menu-wrapper ul li:last-child {
     float: right;
     margin: 0px;
     padding: 0px;
 }
+.top-menu-wrapper  ul li.show-menu {
+  display: none;
+}
+
+#show-menu{
+  background-image: url(../images/menu.png);
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 36px;
+  border: none;
+  background-color:#0e0e37; 
+  cursor: pointer;
+}
 /*end component top menu*/
 
 /*start component about main page*/
 .main-page-about-wrapper {
-    min-height: 1039px;
+    min-height: 1016px;
      background:
     url(../images/about-bg.jpg) no-repeat center top,
     #070821 url(../images/about-bg-line.png) repeat-x left top;
@@ -147,18 +168,18 @@ body {
      clear: both;
 }
 .main-page-about-wrapper .top-block-text h1 {
- 	color: #fff;
-    font-family: proxima_nova_cn_ltlight;
+    color: #fff;
+    font-family: ProximaNovaCond-Light;
     font-size: 2.4em;
     letter-spacing: 12px;
     line-height: 1.7em;
-    padding-bottom: 22px;
-    padding-top: 137px;
+    padding-bottom: 18px;
+    padding-top: 136px;
     text-align: center;
     text-transform: uppercase;
 }
 .main-page-about-wrapper .top-block-text h2{
-	color: #fff;
+  color: #fff;
 }
 .main-page-about-wrapper .top-block-text h2 {
     color: #fff;
@@ -166,12 +187,12 @@ body {
     font-size: 1.3em;
 }
 .add-service{
-	background-color: #cf051d;
-	border-bottom: 3px solid #a60417;
-	border-left: none;
-	border-right: none;
-	border-top: none;
-	border-radius: 4px;
+  background-color: #cf051d;
+  border-bottom: 3px solid #a60417;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 4px;
     width: 288px;
     color: #fff;
     font-size: 0.83em;
@@ -180,19 +201,24 @@ body {
     padding-top: 19px;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: ProximaNovaCond-Regular;
 }
 .about-list-wrapper{
-	text-align: center;
+  text-align: center;
 }
 .about-list-wrapper h2 span {
     color: #fff;
-    font-family: cond_regular;
+}
+.about-list-wrapper span:first-child {
+    color: #b6061f;
 }
 .about-list-wrapper h2 {
-    font-size: 2em;
-    padding-top: 147px;
-    text-align: center;
+    font-size: 1.7em;
+    letter-spacing: 6px;
     padding-bottom: 47px;
+    padding-top: 153px;
+    text-align: center;
+    text-transform: uppercase;
 }
 .about-list-wrapper .about-cell {
     display: inline-block;
@@ -200,11 +226,15 @@ body {
 }
 .about-list-wrapper .about-cell h3 {
     color: #f00e29;
-    font-size: 1.5em;
-    padding-top: 32px;
+    font-family: ProximaNova-Semibold;
+    font-size: 1.7em;
+    padding-bottom: 10px;
+    padding-top: 35px;
 }
 .about-list-wrapper .about-cell .about-text {
     color: #fff;
+    line-height: 1.4em;
+    padding-left: 19px;
     text-align: left;
 }
 /*end component about main page*/
@@ -212,59 +242,191 @@ body {
 /*start about team*/
 .about-team-wrapper {
     background: #1f0a0d url("../images/about-team-bg.jpg") no-repeat scroll center top / cover ;
-    height: 600px;
+    height: 592px;
     text-align: center;
 }
 .about-team-wrapper h2 {
     color: #fff;
-    font-size: 2em;
-    letter-spacing: 4px;
-    padding-bottom: 36px;
-    padding-top: 223px;
+    font-family: ProximaNovaCond-Light;
+    font-size: 1.7em;
+    letter-spacing: 7px;
+    padding-bottom: 29px;
+    padding-top: 228px;
+    text-transform: uppercase;
 }
 
 .about-team-wrapper .about-team-text {
     color: #fff;
     font-size: 1.3em;
+    line-height: 1.7em;
+}
+.about-team-wrapper .about-team-text span:first-child {
+    color: #b6061f;
+
+}
+.about-team-wrapper .about-team-text span:nth-child(2) {
+
 }
 /*end about team*/
 
 /*start component portfolio main*/
 .portfolio-main-wrapper{
-	min-height: 800px;
+  min-height: 790px;
 }
 /*end compopnent portfolio main*/
 
 /*start bottom main include area*/
 .bottom-main-wrapper{
-	min-height: 464px;
-	text-align: center;
-	background-image: url('../images/bottom-bg-main.jpg');
+  min-height: 451px;
+  text-align: center;
      background:
     url('../images/bottom-bg-main.jpg') no-repeat center top,
-    #171641 url('../images/bottom-bg-main-line.png') repeat-x left top;
+    #07050e url('../images/bottom-bg-main-line.png') repeat-x left top;
 }
 .bottom-main-wrapper h2 {
     color: #fff;
+    font-family: ProximaNovaCond-Light;
     font-size: 1.8em;
-    padding-bottom: 53px;
-    padding-top: 98px;
+    letter-spacing: 6px;
+    line-height: 1.5em;
+    padding-bottom: 27px;
+    padding-top: 93px;
 }
 .bottom-main-wrapper .bottom-main-text{
-	color: #fff;
-	padding-bottom: 50px;
-	font-size: 1.4em;
+    color: #fff;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    padding-bottom: 72px;
 }
 /*end bottom main inlcude area*/
 .content {
+    padding-top: 63px;
 }
-
-
-
 
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-	min-height: 136px;
-	background: #07050e;
+  min-height: 154px;
+  background: #07050e;
+  color: #fff;
+  text-align: center;
 }
+.footer-row {
+}
+.footer-cell {
+    display: inline-block;
+    vertical-align: top;
+    width: 27%;}
+.footer-cell.coop {
+    font-size: 0.9em;
+    padding-top: 85px;
+    text-align: left;
+}
+.footer-cell.bottom-adres {
+    line-height: 1.5em;
+    padding-top: 55px;
+    text-align: right;
+}
+.footer-cell.social-icons > div {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1.9em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.footer-cell.social-icons ul li {
+    display: inline-block;
+}
+
+.footer-cell.social-icons ul li a{
+    background-image: url("../images/social-ico.png");
+    display: block;
+    height: 33px;
+    margin: 16px 5px 5px;
+    width: 33px;
+}
+.footer-cell.social-icons ul li a.fb-ico{
+    background-position: 0 0;
+}
+.footer-cell.social-icons ul li a.fb-ico:hover{
+    background-position: 0 100%;
+}
+.footer-cell.social-icons ul li a.vk-ico{
+     background-position: 50% 0;
+}
+.footer-cell.social-icons ul li a.vk-ico:hover{
+     background-position: 50% 100%;
+}
+.footer-cell.social-icons ul li a.inst-ico{
+     background-position: 100% 0;
+}
+.footer-cell.social-icons ul li a.inst-ico:hover{
+     background-position: 100% 100%;
+}
+@media (max-width: 1280px){
+  .wrapper{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 992px){
+
+  .content {
+      padding-top: 50px;
+  }
+  .top-menu-wrapper {
+    min-height: 50px;
+  }
+    .top-menu-wrapper nav {
+      margin-top: 0px;
+  }
+  .top-menu-wrapper ul {
+    padding-left:0px;
+  }
+  .top-menu-wrapper a {
+    display: block;
+    height: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .top-menu-wrapper.open-menu nav {
+      position: absolute;
+      right: 0;
+      width: 220px;
+      top: 50px;
+  }
+  .top-menu-wrapper ul{
+    background-color: #3c5c85;
+  }
+  .top-menu-wrapper ul li {
+    height: 30px;
+    display: none;
+  }
+  .top-menu-wrapper.open-menu li{
+    display: block;
+  }
+  .top-menu-wrapper ul li.show-menu {
+    display: block;
+    position: fixed;
+    right: -30px;
+    top: 8px;
+  }
+  .top-menu-wrapper a.logo {
+      width: auto;
+      margin-top: 13px;
+  }
+  .top-menu-wrapper a.logo img {
+      width: 200px;
+  }
+  .top-menu-wrapper ul li:last-child {
+      float: none;
+  }
+}
+

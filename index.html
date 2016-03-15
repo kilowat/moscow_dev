@@ -17,12 +17,15 @@
 <header class="header">
   <!--start component top menu-->
     <div class="top-menu-wrapper">
-      <div class="top menu wrapper">
+      <div class="wrapper">
         <a href="/" title="Moscow Development" class="logo">
           <img src="./images/logo.png" alt="Moscow Development">
         </a>
         <nav>
           <ul>
+              <li class="show-menu">
+                <button id="show-menu"></button>
+             </li>
             <!--foreach $arResult-->
               <li>
                 <a href="#" title="#">Анализ</a>
@@ -44,6 +47,11 @@
         </nav>
       </div>
     </div>
+    <script>
+      $('#show-menu').click(function(){
+          $('.top-menu-wrapper').toggleClass("open-menu");
+        });
+  </script>
   <!--end component top menu-->
 </header><!-- .header-->
 
@@ -103,7 +111,7 @@
     <div class="wrapper">
       <h2>создаем проекты с нуля</h2>
       <div class="about-team-text">
-        Moscow Development — это команда профессионалов, имеющих за плечами богатый опыт реализации масштабных и уникальных проектов. Мы успешно выполняем функции технического заказчика и ведем клиента через все этапы воплощения проекта в жизнь.
+        <span>Moscow</span> <span>Development</span> — это команда профессионалов, имеющих за плечами богатый <br>опыт реализации масштабных и уникальных проектов. Мы успешно выполняем функции <br>технического заказчика и ведем клиента через все этапы воплощения проекта в жизнь.
       </div>
     </div>
   </div>
@@ -131,7 +139,34 @@
 </main><!-- .content -->
 
 <footer class="footer">
-    <strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+  <div class="wrapper">
+    <div class="footer-row">
+      <div class="footer-cell coop">
+        <span>2014 @ Moscow Development</span>
+      </div>
+      <div class="footer-cell social-icons">
+        <div>Следите за нами </div><div>в социальных сетях</div>
+        <ul>
+          <li>
+            <a href="" title="" class="social-ico fb-ico"></a>
+          </li>
+          <li>
+            <a href="" title="" class="social-ico vk-ico"></a>
+          </li>
+          <li>
+            <a href="" title="" class="social-ico inst-ico"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-cell bottom-adres">
+        <!--start include area adres-->
+          <span>Москва, Дмитровское шоссе, 157</span>
+          <br>
+          <span>+7(495) 220-98-89</span>
+        <!--end include area adres-->
+      </div>
+    </div>
+  </div>
 </footer><!-- .footer -->
 
 
