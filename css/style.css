@@ -242,7 +242,7 @@ body {
 /*start about team*/
 .about-team-wrapper {
     background: #1f0a0d url("../images/about-team-bg.jpg") no-repeat scroll center top / cover ;
-    height: 592px;
+    min-height: 592px;
     text-align: center;
 }
 .about-team-wrapper h2 {
@@ -427,6 +427,101 @@ body {
   }
   .top-menu-wrapper ul li:last-child {
       float: none;
+  }
+
+  .about-list-wrapper .about-cell {
+      margin-bottom: 10px;
+      width: 45%;
+  }
+  .about-list-wrapper .about-cell .about-text{
+    text-align: center;
+  }
+  .about-team-wrapper h2 {
+      padding-top: 50px;
+  }
+
+  .about-team-wrapper {
+      background: #1f0a0d url("../images/about-team-bg-mini.jpg") no-repeat scroll center top / cover ;
+      min-height: 365px;
+  }
+  .main-page-about-wrapper .top-block-text h1 {
+    
+      font-size: 1.4em;
+      letter-spacing: 6px;
+      padding-bottom: 16px;
+      padding-top: 31px;
+  }
+
+  .main-page-about-wrapper {
+      background-image: url("../images/about-bg-mini.jpg");
+      background-color:#070821;
+      background-repeat: no-repeat;
+      min-height: auto;
+      padding-bottom: 30px;
+  }
+  .about-list-wrapper h2{
+    font-size: 1.4em;
+    padding-top: 50px;
+  }
+
+  .bottom-main-wrapper h2 {
+      padding-top: 30px;
+      font-size: 1.4em;
+  }
+  .bottom-main-wrapper .bottom-main-text{
+    font-size: 1.2em;
+  }
+  .bottom-main-wrapper{
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+  .bottom-main-wrapper {
+    background: url("../images/bottom-bg-main-mini.jpg") no-repeat scroll center top;
+    background-size: cover;
+  }
+}
+@media (max-width: 860px){
+  .footer-cell, .footer-cell.bottom-adres, .footer-cell.coop{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding:0px;
+  }
+  .footer-cell.coop{
+    padding-bottom: 20px;
+  }
+  .footer-cell.social-icons > div{
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 500px){
+  .about-team-wrapper .about-team-text{
+    line-height: 1.4em;
+  }
+  .about-list-wrapper .about-cell {
+      margin-bottom: 10px;
+      width: 100%;
+  }
+  .add-service{
+    width: 200px;
+  }
+  .about-team-wrapper{
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .about-team-wrapper {
+      background: #1f0a0d url("../images/about-team-bg-mini.jpg") no-repeat scroll center top / cover ;
+      min-height: 340px;
+
+  }
+
+  .about-team-wrapper h2 {
+      font-size: 1.4em;
+      letter-spacing: 7px;
+      padding-bottom: 15px;
+      padding-top: 30px;
   }
 }
 
