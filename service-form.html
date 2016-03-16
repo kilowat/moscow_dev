@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>title</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <script src="./js/jquery-2.2.1.min.js" type="text/javascript"></script>
+  <script src="./js/fotorama.js" type="text/javascript"></script>
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/fotorama.css" rel="stylesheet">
+  <link href="./css/slick.css" rel="stylesheet">
+  <link href="./css/slick-theme.css" rel="stylesheet">
+  <script src="./js/slick.min.js" type="text/javascript"></script>
+  <script src="./js/app.js" type="text/javascript"></script>
+  <script src="./js/pixp.js" type="text/javascript"></script>
+  <script src="./js/jquery.placeholder.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.8/jquery.form-validator.min.js"></script> 
+</head>
+
+<body>
+
+<header class="header">
+  <!--start component top menu-->
+    <div class="top-menu-wrapper">
+      <div class="wrapper">
+        <a href="/" title="Moscow Development" class="logo">
+          <img src="./images/logo.png" alt="Moscow Development">
+        </a>
+        <nav>
+          <ul>
+              <li class="show-menu">
+                <button id="show-menu"></button>
+             </li>
+            <!--foreach $arResult-->
+              <li>
+                <a href="#" title="#">Анализ</a>
+              </li>
+              <li>
+                <a href="#" title="#">Концепция</a>
+              </li>
+              <li>
+                <a href="#" title="#">Проект</a>
+              </li>
+              <li>
+                <a href="#" title="#">Строительство</a>
+              </li>
+              <li>
+                <a href="#" title="#">Контактаная информация</a>
+              </li>
+            <!--endforeach-->
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script>
+      $('#show-menu').click(function(){
+          $('.top-menu-wrapper').toggleClass("open-menu");
+        });
+  </script>
+  <!--end component top menu-->
+</header><!-- .header-->
+
+<main class="content">
+  <!--start form servcie add-->
+  <div class="feedback-form-dev">
+    <h2>Заказать услугу</h2>
+    <form>
+      <div class="form-row">
+        <label for="name-input" class="form-label">предствьтесь пожалуйста</label>
+        <input type="text" placeholder="Ваше имя" name="name" data-validation="required" id="name-input">
+      </div>
+      <div class="form-row">
+        <label for="name-input" class="form-label">телефон или почта</label>
+        <input type="text" placeholder="+7XXX XX-XX-XX" data-validation="required" name="email" id="email-input">
+      </div>
+      <div class="form-row">
+        <label class="form-list-label">выберите одно или несколько услуг</label>
+        <ul class="form-list-button">
+       <!--foreach $services-->
+          <li class="selected">
+            <span class="dashed">Анализ</span>
+          </li>
+          <li>
+            <span class="dashed">Концепция</span>
+          </li>
+          <li>
+            <span class="dashed">Проект</span>
+          </li>
+          <li>
+            <span class="dashed">Строительство</span>
+          </li>
+       <!--endforeach-->
+        </ul>
+      </div>
+      <div class="form-row submit-wrapper">
+        <input type="submit" class="add-service" value="заказать услугу">
+      </div>
+    </form>
+    <script>
+       $.validate();
+    </script>
+  </div>
+  <!--end form service add-->
+</main><!-- .content -->
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer-row">
+      <div class="footer-cell coop">
+        <span>2014 @ Moscow Development</span>
+      </div>
+      <div class="footer-cell social-icons">
+        <div>Следите за нами </div><div>в социальных сетях</div>
+        <ul>
+          <li>
+            <a href="" title="" class="social-ico fb-ico"></a>
+          </li>
+          <li>
+            <a href="" title="" class="social-ico vk-ico"></a>
+          </li>
+          <li>
+            <a href="" title="" class="social-ico inst-ico"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-cell bottom-adres">
+        <!--start include area adres-->
+          <span>Москва, Дмитровское шоссе, 157</span>
+          <br>
+          <span>+7(495) 220-98-89</span>
+        <!--end include area adres-->
+      </div>
+    </div>
+  </div>
+</footer><!-- .footer -->
+
+
+</body>
+</html>
