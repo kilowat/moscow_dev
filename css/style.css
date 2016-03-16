@@ -297,17 +297,17 @@ body {
 
 /*start component portfolio main*/
 .portfolio-main-wrapper{
-  min-height: 789px;
+  min-height: 800px;
 }
 /*end compopnent portfolio main*/
 
 /*start bottom main include area*/
 .bottom-main-wrapper{
-  min-height: 451px;
+  min-height: 400px;
   text-align: center;
      background:
     url('../images/bottom-bg-main.jpg') no-repeat center top,
-    #07050e url('../images/bottom-bg-main-line.png') repeat-x left top;
+    #07050e url('../images/bottom-bg-main-line.png') repeat-x center top;
 }
 .bottom-main-wrapper h2 {
     color: #fff;
@@ -354,7 +354,7 @@ body {
     float: left;
     width: 50%;
     position: relative;
-    min-height: 789px; 
+    min-height: 800px; 
 }
 .portfolio-content {
     padding-left: 95px;
@@ -383,7 +383,7 @@ body {
     float: right;
     width: 50%;
     right: 0;
-    min-height: 789px; 
+    min-height: 800px; 
     background-color: #f3f3f3;
 }
 .portfolio-descr-text ul {
@@ -531,8 +531,8 @@ body {
   color: #fff;
   text-align: center;
   background:
-    url('../images/footer-center-bg.jpg') no-repeat center top,
-    #07050e  url('../images/footer-bg.png') repeat-x left top;
+    url('../images/footer-center-bg.jpg') no-repeat center center,
+    #07050e  url('../images/footer-bg.png') repeat-x top center;
 }
 .footer-row {
 }
