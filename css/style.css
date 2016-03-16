@@ -527,10 +527,12 @@ body {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-  min-height: 154px;
-  background: #07050e;
+  min-height: 200px;
   color: #fff;
   text-align: center;
+  background:
+    url('../images/footer-center-bg.jpg') no-repeat center top,
+    #07050e  url('../images/footer-bg.png') repeat-x left top;
 }
 .footer-row {
 }
