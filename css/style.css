@@ -99,6 +99,7 @@ body {
 
 .logo {
     float: left;
+    padding-top: 40px;
 }
 .dashed {
   background: -moz-linear-gradient(left, red, red 60%, transparent 60%);
@@ -123,15 +124,13 @@ body {
 /*start component top menu*/
 .top-menu-wrapper {
     background-color: #0e0e37;
-    position: fixed;
     width: 100%;
     text-align: center;
-    min-height: 63px;
-    z-index: 2;
+    min-height: 105px;
 }
 
 .top-menu-wrapper nav {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .top-menu-wrapper ul li {
     display: inline-block;
@@ -172,7 +171,7 @@ body {
      background:
     url(../images/about-bg.jpg) no-repeat center top,
     #070821 url(../images/about-bg-line.png) repeat-x left top;
-    padding-bottom: 105px;
+    padding-bottom: 63px;
 
 }
 .main-page-about-wrapper .top-block-text {
@@ -186,7 +185,7 @@ body {
     letter-spacing: 12px;
     line-height: 1.7em;
     padding-bottom: 18px;
-    padding-top: 141px;
+    padding-top: 100px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -207,8 +206,8 @@ body {
   border-radius: 4px;
     width: 288px;
     color: #fff;
-    font-size: 0.83em;
-    letter-spacing: 2px;
+    font-size: 0.85em;
+    letter-spacing: 3px;
     padding-bottom: 19px;
     padding-top: 19px;
     text-transform: uppercase;
@@ -297,7 +296,7 @@ body {
 
 /*start component portfolio main*/
 .portfolio-main-wrapper{
-  min-height: 800px;
+  height: auto;
 }
 /*end compopnent portfolio main*/
 
@@ -320,13 +319,13 @@ body {
 }
 .bottom-main-wrapper .bottom-main-text{
     color: #fff;
-    font-size: 1.4em;
-    line-height: 1.4em;
+    font-size: 1.3em;
+    line-height: 1.6em;
     padding-bottom: 72px;
 }
 /*end bottom main inlcude area*/
 .content {
-    padding-top: 63px;
+
 }
 /*start component portfolio*/
 .protfolio-head {
@@ -354,7 +353,7 @@ body {
     float: left;
     width: 50%;
     position: relative;
-    min-height: 800px; 
+    height: auto; 
 }
 .portfolio-content {
     padding-left: 95px;
@@ -370,8 +369,9 @@ body {
     margin-top: 226px;
 }
 .portfolio-text {
+    font-family: ProximaNova-Semibold;
     font-size: 1.3em;
-    line-height: 1.6em;
+    line-height: 1.9em;
     margin-bottom: 40px;
 }
 .portfolio-list .pagin {
@@ -383,7 +383,7 @@ body {
     float: right;
     width: 50%;
     right: 0;
-    min-height: 800px; 
+    height: auto; 
     background-color: #f3f3f3;
 }
 .portfolio-descr-text ul {
@@ -412,6 +412,7 @@ body {
 .show-portfolio {
     color: #cf051d;
     cursor: pointer;
+    font-family: ProximaNova-Semibold;
 }
 .p-slider-pagin {
     left: 5px;
@@ -524,6 +525,47 @@ body {
     display: none;
 }
 /*end component form popup add service*/
+
+/*start component bread-crumbs*/
+.bread-crumbs-wrapper{
+ 
+}
+.bread-crumbs-wrapper ul {
+    padding-top: 50px;
+}
+.bread-crumbs-wrapper ul li a {
+    color: #cf051d;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.bread-crumbs-wrapper ul li a:hover{
+  
+}
+.bread-crumbs-wrapper ul li span {
+    display: inline-block;
+    font-family: ProximaNovaCond-Light;
+    font-size: 2.3em;
+    letter-spacing: 11px;
+    padding-top: 27px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.section-descr-wrapper{
+  background-image: url('../images/analiz-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color:#3b221e;
+  background-size: cover; 
+  min-height: 337px;
+}
+/*end component bread-crumbs*/
+.section-description {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    text-align: center;
+    color: #fff;
+}
+
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
@@ -542,12 +584,12 @@ body {
     width: 27%;}
 .footer-cell.coop {
     font-size: 0.9em;
-    padding-top: 85px;
+    padding-top: 142px;
     text-align: left;
 }
 .footer-cell.bottom-adres {
     line-height: 1.5em;
-    padding-top: 55px;
+    padding-top: 113px;
     text-align: right;
 }
 .footer-cell.social-icons > div {
@@ -570,6 +612,10 @@ body {
     height: 33px;
     margin: 16px 5px 5px;
     width: 33px;
+}
+
+.footer-cell.social-icons {
+    padding-top: 57px;
 }
 .footer-cell.social-icons ul li a.fb-ico{
     background-position: 0 0;
@@ -598,10 +644,12 @@ body {
 @media (max-width: 992px){
 
   .content {
-      padding-top: 50px;
+    padding-top: 50px;
   }
   .top-menu-wrapper {
     min-height: 50px;
+    position: fixed;
+    z-index: 2;
   }
     .top-menu-wrapper nav {
       margin-top: 0px;
@@ -624,6 +672,7 @@ body {
       right: 0;
       width: 220px;
       top: 50px;
+      padding-top: 0px;
   }
   .top-menu-wrapper ul{
     background-color: #3c5c85;
@@ -759,10 +808,17 @@ body {
       float: none;
       width: 100%;
       margin-bottom: 10px;
+      height: auto;
   }
   .portfolio-right-block{
       float: none;
       width: 100%; 
+      height: auto;
+
+  }
+  .portfolio-main-wrapper{
+    height: auto;
+    min-height: auto;
   }
   .portfolio-content{
     width: 100%;

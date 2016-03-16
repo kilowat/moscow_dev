@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>title</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <script src="./js/jquery-2.2.1.min.js" type="text/javascript"></script>
+  <script src="./js/fotorama.js" type="text/javascript"></script>
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/fotorama.css" rel="stylesheet">
+  <link href="./css/slick.css" rel="stylesheet">
+  <link href="./css/slick-theme.css" rel="stylesheet">
+  <script src="./js/slick.min.js" type="text/javascript"></script>
+  <script src="./js/app.js" type="text/javascript"></script>
+  <script src="./js/pixp.js" type="text/javascript"></script>
+  <script src="./js/jquery.placeholder.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<header class="header">
+  <!--start component top menu-->
+    <div class="top-menu-wrapper">
+      <div class="wrapper">
+        <a href="/" title="Moscow Development" class="logo">
+          <img src="./images/logo.png" alt="Moscow Development">
+        </a>
+        <nav>
+          <ul>
+              <li class="show-menu">
+                <button id="show-menu"></button>
+             </li>
+            <!--foreach $arResult-->
+              <li>
+                <a href="#" title="#">Анализ</a>
+              </li>
+              <li>
+                <a href="#" title="#">Концепция</a>
+              </li>
+              <li>
+                <a href="#" title="#">Проект</a>
+              </li>
+              <li>
+                <a href="#" title="#">Строительство</a>
+              </li>
+              <li>
+                <a href="#" title="#">Контактаная информация</a>
+              </li>
+            <!--endforeach-->
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script>
+      $('#show-menu').click(function(){
+          $('.top-menu-wrapper').toggleClass("open-menu");
+        });
+  </script>
+  <!--end component top menu-->
+</header><!-- .header-->
+
+<main class="content">
+  <div class="section-descr-wrapper">
+    <div class="wrapper">
+      <!--start component bread crumbs-->
+      <div class="bread-crumbs-wrapper">
+        <ul>
+          <li><a href="/" title="главная">Главная</a></li>
+           <li><span>Анализ</span></li>
+         </ul>
+      </div>
+      <!--end component bread crumbs-->
+
+      <!--section description include area-->
+      <h1 class="section-description">Два вида анализа, с помощью которых вы сможете использовать <br>земельный участок с максимальной эффективностью.</h1>
+    <!--end section description include area-->
+    </div>
+  </div>
+</main><!-- .content -->
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer-row">
+      <div class="footer-cell coop">
+        <span>2014 @ Moscow Development</span>
+      </div>
+      <div class="footer-cell social-icons">
+        <div>Следите за нами </div><div>в социальных сетях</div>
+        <ul>
+          <li>
+            <a href="" title="" class="social-ico fb-ico"></a>
+          </li>
+          <li>
+            <a href="" title="" class="social-ico vk-ico"></a>
+          </li>
+          <li>
+            <a href="" title="" class="social-ico inst-ico"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-cell bottom-adres">
+        <!--start include area adres-->
+          <span>Москва, Дмитровское шоссе, 157</span>
+          <br>
+          <span>+7(495) 220-98-89</span>
+        <!--end include area adres-->
+      </div>
+    </div>
+  </div>
+</footer><!-- .footer -->
+
+
+</body>
+</html>
